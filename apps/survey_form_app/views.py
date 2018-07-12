@@ -7,11 +7,9 @@ def index(request):
     return render(request,'survey_form_app/index.html')
 
 def result(request):
-    print("WE IN RESULT")
     return render(request,'survey_form_app/result.html')
 
 def process(request, methods=['POST']):
-    print("WE IN PROCESS")
     request.session['name'] = request.POST['name']
     request.session['dojo'] = request.POST['dojo']
     request.session['language'] = request.POST['language']
