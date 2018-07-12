@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+button{
+    box-shadow: 2px 2px black;
+}
+
+form{
+    margin-top:5%;
+    outline: 2px solid black;
+    padding: 10%;
+}
+
+.heading{
+    background-color: greenyellow;
+    outline: 2px solid black;
+}
+
+.information{
+    outline: 2px solid black;
+}
