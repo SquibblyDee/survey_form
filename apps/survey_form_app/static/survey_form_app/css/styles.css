@@ -16,6 +16,7 @@ form{
 .heading{
     background-color: greenyellow;
     outline: 2px solid black;
+    margin-top: 50px;
 }
 
 .information{

@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    # This line catches any path and passes it to the srvey_form_app.urls file
     url(r'^', include('apps.survey_form_app.urls'))
 ]
