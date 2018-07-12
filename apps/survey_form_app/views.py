@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 
 # Index creates a session key for count if it doesn't already exist.
-def index(request):
+def index(request, methods=['POST']):
     if 'count' not in request.session:
         request.session['count']=0
     return render(request,'survey_form_app/index.html')

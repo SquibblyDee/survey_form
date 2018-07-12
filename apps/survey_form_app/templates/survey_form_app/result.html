@@ -14,7 +14,7 @@
                 <h3>Thanks for submitting this form! You have submitted this form {{ request.session.count }} time(s) now.</h3>
             </div>
             <!-- Form redirects back to root on click-->
-            <form action="/">
+            <form action="/", method='post'>
                 {% csrf_token %}
                 <h3><u>Submitted Information</u></h3>
                 <p>Name: {{request.session.name}}</p>
